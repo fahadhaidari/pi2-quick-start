@@ -12,10 +12,10 @@ pi2.setup = function () {
 
 pi2.start();
 
-pi2.onMouseUp = function(target) {
+pi2.onMouseUp = function(data) {
   pi2.draw.circle({
-    x: target.mouse.x,
-    y: target.mouse.y,
+    x: data.mouse.x,
+    y: data.mouse.y,
     vel: new pi2.Vector(
       pi2.util.randomDouble(-2, 2),
       pi2.util.randomDouble(-2, 2),
